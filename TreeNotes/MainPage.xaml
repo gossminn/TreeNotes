@@ -8,6 +8,16 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <StackPanel Margin="20">
+            <ScrollViewer MaxHeight="50" VerticalScrollBarVisibility="Visible">
+                <TextBlock Name="PathBlock"  FontWeight="Bold" TextWrapping="Wrap">PATH GOES HERE</TextBlock>
+            </ScrollViewer>
+            <ScrollViewer MaxHeight="50" VerticalScrollBarVisibility="Visible">
+                <TextBlock Name="ChildBlock" TextWrapping="Wrap"></TextBlock>
+            </ScrollViewer>
+            <TextBox Name="TitleBox"  PlaceholderText="Enter a title ..."></TextBox>
+            <TextBox Name="EditorBox" PlaceholderText="Type your notes ..." AcceptsReturn="True" Height="250" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+            <TextBox Name="CommandBox" PlaceholderText="Type a command ..."></TextBox>
+        </StackPanel>
     </Grid>
 </Page>

@@ -98,7 +98,11 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NoteNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TreeEditor.cs" />
+    <Compile Include="TreeReader.cs" />
+    <Compile Include="TreeWriter.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
